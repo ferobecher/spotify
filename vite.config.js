@@ -12,10 +12,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  server: {
-    proxy: {
-      '/api': 'https://spotify-server-tzv1.onrender.com/',
-    },
-  },
+  }
 })
