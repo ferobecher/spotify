@@ -13,7 +13,7 @@ export const useSongStore = defineStore('song', {
   actions: {
     changeLibrary(id) {
       axios
-        .get(`https://spotify-server-tzv1.onrender.com/api/artist/${id}/${id}`)
+        .get(`https://spotifyserver-production-33a4.up.railway.app/api/artist/${id}/${id}`)
         .then((response) => {
             let data = response.data;
             this.album = data.album[0];
